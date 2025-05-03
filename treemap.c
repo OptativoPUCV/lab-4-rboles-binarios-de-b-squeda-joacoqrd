@@ -89,17 +89,17 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
             if (tree->current->left != NULL){
                 tree->current = tree->current->left;
             }else{
-                valor == 0;
+                valor = 0;
             }
 
         }else{ //si el dato es mayor al del arbol
             if (tree->current->right!= NULL){
             tree->current = tree->current->right;                
             }else{
-                valor == 0;
+                valor = 0;
             }
         }
-        
+
     }
     return NULL;
 }

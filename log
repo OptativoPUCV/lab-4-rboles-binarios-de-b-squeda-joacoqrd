@@ -35,3 +35,14 @@ treemap.c:99:23: error: statement with no effect [-Werror=unused-value]
                  ~~~~~~^~~~
 cc1.exe: all warnings being treated as errors
 6283540
+Sat, May  3, 2025 12:54:10 PM: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'searchTreeMap':
+treemap.c:88:13: error: implicit declaration of function 'lower_than_int' [-Werror=implicit-function-declaration]
+         if (lower_than_int(tree->current->pair->key, key) == 0){ //si el dato es menor al del arbol
+             ^~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+8abd545
