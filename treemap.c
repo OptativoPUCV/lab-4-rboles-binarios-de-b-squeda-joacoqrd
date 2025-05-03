@@ -85,7 +85,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
             return tree->current->pair;
         }
 
-        if (lower_than_int(tree->current->pair->key, key) == 0){ //si el dato es menor al del arbol
+        if (tree->lower_than(key, tree->current->pair->key)){ //si el dato es menor al del arbol
             if (tree->current->left != NULL){
                 tree->current = tree->current->left;
             }else{
