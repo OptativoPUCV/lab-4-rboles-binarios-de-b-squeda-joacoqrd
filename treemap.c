@@ -213,7 +213,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         while (aux->left != NULL){
             aux = aux->left;        
         }
-        return aux;
+        return aux->pair;
     }
 
     TreeNode* padre = tree->current->parent;
@@ -221,5 +221,5 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = padre;
         padre = padre->parent;
     }
-    return padre;
+    return padre->pair;
 }
