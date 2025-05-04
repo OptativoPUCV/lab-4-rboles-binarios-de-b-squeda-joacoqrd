@@ -132,3 +132,14 @@ Sun, May  4, 2025 12:54:47 AM:
  tests:  18|3
 total_score: 40/70
 0cb8282
+Sun, May  4, 2025  1:09:23 AM: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'firstTreeMap':
+treemap.c:207:12: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return first;
+            ^~~~~
+cc1.exe: all warnings being treated as errors
+1034391
